@@ -89,7 +89,7 @@
 <script src="./image-slot.js"></script>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Archivo',system-ui,sans-serif;background:#0D0F12;color:#11151A;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{font-family:'Archivo',system-ui,sans-serif;background:#fff;color:#11151A;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   a{color:#152d51;text-decoration:none}
   a:hover{color:#1f3a66}
   ::selection{background:#152d51;color:#fff}
@@ -106,9 +106,9 @@
   @media(max-width:900px){.tb-herogrid{grid-template-columns:1fr!important}.tb-two{grid-template-columns:1fr!important}.tb-pdp{grid-template-columns:1fr!important}.tb-shopgrid{grid-template-columns:1fr!important}.tb-prodgrid{grid-template-columns:repeat(2,1fr)!important}.tb-filterbtn{display:inline-flex!important}.tb-catgrid{grid-template-columns:repeat(2,1fr)!important}.tb-gallery{grid-template-columns:1fr!important;height:auto!important}.tb-gallery>div{min-height:240px}}
   @media(max-width:560px){.tb-catgrid{grid-template-columns:1fr 1fr!important}.tb-trust{grid-template-columns:1fr!important}.tb-footer{grid-template-columns:1fr!important}.tb-prodgrid{grid-template-columns:1fr!important}}  @keyframes tbMarquee{from{transform:translateX(-50%)}to{transform:translateX(0)}}
   .tb-marquee:hover .tb-track{animation-play-state:paused}
-  .tb-herofloat{animation:tbHeroFloat 7s ease-in-out infinite}
+  .tb-herofloat{animation:none}
   @keyframes tbHeroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-  .tb-reveal{animation:tbReveal .9s cubic-bezier(.22,.61,.36,1) both}
+  .tb-reveal{animation:none}
   @keyframes tbReveal{from{opacity:0;clip-path:inset(0 0 14% 0);transform:translateY(12px)}to{opacity:1;clip-path:inset(0 0 0 0);transform:none}}
   @media(prefers-reduced-motion:reduce){.tb-track,.tb-herofloat,.tb-reveal{animation:none!important}*{scroll-behavior:auto!important}}
   @media(max-width:760px){.tb-remonthero{opacity:.22;width:72%!important}}
@@ -220,7 +220,7 @@
   </header>
 
   <main style="flex:1">
-  <div key="{{ screen }}" style="animation:tbPageIn .42s cubic-bezier(.22,.61,.36,1) both">
+  <div key="{{ screen }}">
 
   <!-- ============ HOME ============ -->
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
