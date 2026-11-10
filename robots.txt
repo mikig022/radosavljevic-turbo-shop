@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /screenshots/
+
+Sitemap: https://turboservis-shop.com/sitemap.xml
